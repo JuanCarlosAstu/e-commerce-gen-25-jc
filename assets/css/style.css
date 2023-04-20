@@ -54,6 +54,14 @@
   --z-modal: 2;
 }
 
+/* Estilo modo oscuro */
+:root.dark {
+  --body-color: hsl(0, 0%, 10%);
+  --bg-color: hsl(0, 0%, 20%);
+  --text-color: hsl(206, 4%, 97%);
+  --title-color: hsl(0, 0%, 90%);
+  --card-color: hsl(0, 0%, 30%);
+}
 @media screen and (min-width: 992px) {
   :root {
     --big-font: 2.5rem;
@@ -98,6 +106,7 @@ body {
   font-weight: var(--font-normal);
   color: var(--text-color);
   background-color: var(--body-color);
+  transition: background-color, color 300ms easy;
 }
 
 h1,
@@ -337,7 +346,7 @@ button {
   right: var(--sp-1-5);
   width: 45px;
   height: 45px;
-  background-color: var(--bg-color);
+  background-color: rgba(240, 226, 226, 0.863);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   transform: translateY(-50%);
